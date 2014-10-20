@@ -1,4 +1,5 @@
 ispycontrol
 ===========
 
-Just a simple interfac to control a i spy tank toy
+Just a simple interface to control a i spy tank toy.
+Start: ruby telebot.rb
