@@ -1,0 +1,21 @@
+ <script src="jquery.js"></script>
+ <script src="commands.js"></script>
+
+
+<h1>Control</h1>
+<button onclick=$.post("control")>Connect to Bot</button>
+
+<h1>Tank</h1>
+<button class="command" data-cmd="move_forward">Forward</button>
+<button class="command" data-cmd="move_backward">Backward</button>
+<button class="command" data-cmd="move_ccw">Left</button>
+<button class="command" data-cmd="move_cw">Right</button>
+<button class="command" data-cmd="move_stop">Stop</button>
+
+<h1>Turret</h1>
+<button class="command" data-cmd="turret_up">Up</button>
+<button class="command" data-cmd="turret_down">Down</button>
+<button class="command" data-cmd="turret_stop">Stop</button>
+
+<h1>Video</h1>
+<iframe src="http://10.10.1.1:8196" align="center" width="320" height="240" scrolling="no" frameborder="no" marginheight="0px"</iframe>
