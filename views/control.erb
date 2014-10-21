@@ -1,9 +1,12 @@
  <script src="jquery.js"></script>
  <script src="commands.js"></script>
+ <script src="ffmpeg.js"></script>
+ <script src="control.js"></script>
 
 
 <h1>Control</h1>
-<button onclick=$.post("control")>Connect to Bot</button>
+<button class="control" data-cmd="connect">Connect to Bot</button>
+<button class="control" data-cmd="disconnect">Disconnect from Bot</button>
 
 <h1>Tank</h1>
 <button class="command" data-cmd="move_forward">Forward</button>
@@ -18,4 +21,6 @@
 <button class="command" data-cmd="turret_stop">Stop</button>
 
 <h1>Video</h1>
-<iframe src="http://10.10.1.1:8196" align="center" width="320" height="240" scrolling="no" frameborder="no" marginheight="0px"></iframe>
+<button class="ffmpeg" data-cmd="start">Start</button>
+<button class="ffmpeg" data-cmd="stop">Stop</button>
+<iframe src="http://127.0.0.1:8090/test.swf" align="center" width="320" height="240" scrolling="no" frameborder="no" marginheight="0px"></iframe>
