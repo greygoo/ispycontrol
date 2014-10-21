@@ -28,19 +28,9 @@ post "/commands" do
 end
 
 post "/video" do
-
   if params[:command] == "start"
     encoder.start
   elsif params[:command] == "stop"
     encoder.stop
   end
-
-  #puts " parameter is: #{params[:command]}"
-  #if params[:command] == "start"
-  #  puts "starting ffmpeg"
-  #  system("ffserver -f #{ffserver_conf}")
-  #elsif params[:command] == "stop"
-  #  puts "stopping ffmpeg"
-  #  system("killall ffserver")
-  #end
 end
