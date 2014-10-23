@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'sinatra'
 require_relative './ispy'
 require_relative './ffmpeg'
@@ -5,6 +6,9 @@ require_relative './ffmpeg'
 ffserver_conf = "#{File.dirname(__FILE__)}/ffmpeg/ffserver.conf"
 encoder = FFMPEG.new(ffserver_conf)
 
+get '/' do
+  redirect '/botcontrol'
+end
 
 get '/botcontrol' do
   "Telebot control interface"
